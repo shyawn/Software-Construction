@@ -1,4 +1,4 @@
-# ASCENDA
+# ASCENDA HOTEL BOOKING SYSTEM
 Software Construction Project
 
 ## Week 4
