@@ -8,8 +8,6 @@
   --light-color: #f4f4f4;
   --grey: #efefef;
   --orange: #f58216;
-  /* --success-color: #5cb85c; */
-  /* --error-color: #d9534f; */
 }
 
 * {
@@ -88,9 +86,6 @@ pre {
 }
 
 .logo {
-  /* font-weight: 900; */
-  /* border-bottom: 0px; */
-  /* text-decoration: none; */
   display: flex;
   cursor: pointer;
   margin-top: 10px;
@@ -99,20 +94,12 @@ pre {
 /* Banner */
 .showcase {
   position: relative;
-  background: url(/images/hotelhero.png) no-repeat center;
+  background: url(/Ascenda/images/hotelhero.png) no-repeat center;
   background-size: cover;
   height: 500px;
   overflow: hidden;
   color: #fff;
 }
-
-/* Showcase */
-/* .showcase {
-  height: 400px;
-  background-color: var(--primary-color);
-  color: #fff;
-  position: relative;
-} */
 
 .showcase h1 {
   font-size: 60px;
@@ -133,13 +120,11 @@ pre {
 }
 
 .showcase-text {
-  animation: slideInFromLeft 1s ease-in;
   align-items: center;
 }
 
 /* Wrapper */
 .wrapper {
-  /* max-width: 450px; */
   margin: auto;
 }
 
@@ -148,8 +133,8 @@ pre {
   background: #fff;
   width: 100%;
   border-radius: 5px;
-  /* border: 2px; */
-  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12); */
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .search-input input {
@@ -267,41 +252,11 @@ pre {
 /* Button */
 .submit {
   background-color: var(--orange);
-  /* grid-template-columns: repeat(1, 1fr); */
   width: 100%;
   padding: 10px 100px;
   /* font-family: "Poppins", sans-serif; */
   font-weight: 600;
 }
-
-/* Form */
-/* .showcase-form {
-  position: relative;
-  top: 60px;
-  height: 350px;
-  width: 400px;
-  padding: 40px;
-  z-index: 100;
-  justify-self: flex-end;
-  animation: slideInFromRight 1s ease-in;
-}
-
-.showcase-form .form-control {
-  margin: 30px 0;
-}
-
-.showcase-form input[type="text"],
-.showcase-form input[type="email"] {
-  border: 0;
-  border-bottom: 1px solid #b4becb;
-  width: 100%;
-  padding: 3px;
-  font-size: 16px;
-}
-
-.showcase-form input:focus {
-  outline: none;
-} */
 
 .showcase::before,
 .showcase::after {
@@ -318,110 +273,6 @@ pre {
   -ms-transform: skewY(-3deg);
 }
 
-/* Stats */
-/* .stats {
-  padding-top: 100px;
-  animation: slideInFromBottom 1s ease-in;
-}
-
-.stats-heading {
-  max-width: 500px;
-  margin: auto;
-}
-
-.stats .grid h3 {
-  font-size: 35px;
-}
-
-.stats .grid p {
-  font-size: 20px;
-  font-weight: bold;
-} */
-
-/* Cli */
-/* .cli .grid {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-.cli .grid > *:first-child {
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 2;
-} */
-
-/* Cloud */
-/* .cloud .grid {
-  grid-template-columns: 4fr 3fr;
-} */
-
-/* Languages */
-/* .languages .flex {
-  flex-wrap: wrap;
-}
-.languages .card {
-  text-align: center;
-  margin: 18px 10px 40px;
-  transition: transform 0.2s ease-in;
-}
-
-.languages .card h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.languages .card:hover {
-  transform: translateY(-15px);
-} */
-
-/* Features */
-/* .features-head img,
-.docs-head img {
-  width: 200px;
-  justify-self: flex-end;
-}
-
-.features-sub-head img {
-  width: 300px;
-  justify-self: flex-end;
-}
-
-.features-main .card > i {
-  margin-right: 20px;
-}
-
-.features-main .grid {
-  padding: 30px;
-}
-
-.features-main .grid > *:first-child {
-  grid-column: 1 / span 3;
-}
-
-.features-main .grid > *:nth-child(2) {
-  grid-column: 1 / span 2;
-} */
-
-/* Docs */
-/* .docs-main h3 {
-  margin: 20px 0;
-}
-
-.docs-main .grid {
-  grid-template-columns: 1fr, 2fr;
-  align-items: flex-start;
-}
-
-.docs-main nav li {
-  font-size: 17px;
-  padding-bottom: 5px;
-  margin-bottom: 5px;
-  border-bottom: 1px #ccc solid;
-}
-
-.docs-main a:hover {
-  font-weight: bold;
-} */
-
 /* Footer */
 .footer {
   margin-top: 50px;
@@ -430,47 +281,6 @@ pre {
 .footer .social a {
   margin: 0 20px;
 }
-
-/* Animations
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInFromTop {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInFromBottom {
-    0% {
-        transform: translateY(100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-} */
 
 /* Tablets & under */
 @media (max-width: 768px) {
