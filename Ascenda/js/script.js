@@ -45,8 +45,7 @@ function showSuggestions(list) {
 }
 
 // Calendar Input
-// document.getElementsByClassName("datePicker").value =
-//   new Date().toDateInputValue();
+document.getElementsByClassName(".startDate").placeholder = new (Date())();
 
 // Room Detail Dropdown
 const dropdowns = document.querySelectorAll(".room-detail");
@@ -76,3 +75,7 @@ dropdowns.forEach((dropdown) => {
     });
   });
 });
+
+// $(document).ready(function () {
+//   $('input[name="datetime-local"]').attr("placeholder", "Full name");
+// });

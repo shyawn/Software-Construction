@@ -66,12 +66,17 @@
                 <div class="cal1">
                   <p>CHECK IN</p>
                   <div class="cal-input">
-                    <!-- <input type="text" placeholder="3 June 2022" /> -->
+                    <!-- <input
+                      class="form-control"
+                      type="date"
+                      placeholder="&nbsp;"
+                      required
+                    /> -->
                     <form>
                       <input
                         class="form-control startDate"
                         type="datetime-local"
-                        placeholder="&nbsp"
+                        placeholder="2022-06-06"
                       />
                     </form>
                     <div class="autocom-box"></div>
@@ -88,7 +93,8 @@
                       <input
                         class="form-control"
                         type="datetime-local"
-                        placeholder="4 June 2022"
+                        placeholder="2022-06-07"
+                        required
                       />
                     </form>
                     <div class="autocom-box"></div>
@@ -192,7 +198,7 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
       config = {
-        // enableTime: true,
+        enableTime: true,
         altInput: true,
         dateFormat: "F j, Y",
         // dateFormat: "Y-m-d",
