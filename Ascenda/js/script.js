@@ -44,6 +44,10 @@ function showSuggestions(list) {
   suggBox.innerHTML = listData;
 }
 
+// Calendar Input
+// document.getElementsByClassName("datePicker").value =
+//   new Date().toDateInputValue();
+
 // Room Detail Dropdown
 const dropdowns = document.querySelectorAll(".room-detail");
 dropdowns.forEach((dropdown) => {
