@@ -66,6 +66,8 @@ pre {
   color: #fff;
   height: 70px;
   align-items: center;
+  /* position: relative; */
+  overflow: hidden;
 }
 
 .navbar ul {
@@ -90,7 +92,10 @@ pre {
   display: flex;
   cursor: pointer;
   margin-top: 10px;
+  /* position: absolute; */
 }
+
+/* Index Page */
 
 /* Banner */
 .showcase {
@@ -371,6 +376,17 @@ input:not(:placeholder-shown) {
   font-weight: 600;
 }
 
+.see-details {
+  background-color: var(--orange);
+  width: 160px;
+  padding: 10px 20px;
+  /* font-family: "Poppins", sans-serif; */
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 /* .showcase::before,
 .showcase::after {
   content: "";
@@ -385,6 +401,103 @@ input:not(:placeholder-shown) {
   -moz-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg);
 } */
+
+/* Hotel List Page */
+.hotel-showcase {
+  position: relative;
+  background: url(/Ascenda/images/hotelhero.png) no-repeat center;
+  background-size: cover;
+  height: 680px;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* .hotel-showcase {
+  position: relative;
+  background: url(/Ascenda/images/hotelhero.png) no-repeat center;
+  background-size: cover;
+  height: 680px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.hotel-showcase .grid {
+  overflow: visible;
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+}
+
+.hotel-showcase h1 {
+  font-size: 60px;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hotel-showcase p {
+  margin: 20px 0;
+}
+
+.hotel-showcase-text {
+  align-items: center;
+} */
+
+.hotel-list {
+  background: #d5d6e1;
+  height: 230px;
+  /* overflow: hidden; */
+  padding: 10px;
+  color: black;
+  width: 700px;
+  border-radius: 5px;
+}
+
+.hotel-list .grid {
+  overflow: visible;
+  grid-template-columns: 40% 60%;
+  gap: 10px;
+}
+
+.hotel-list img {
+  height: 160px;
+  width: auto;
+}
+
+.hotel-right {
+  position: relative;
+}
+
+.hotel-list h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.hotel-list .price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Room List Page */
+
+.room-column {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  width: 800px;
+}
+
+.room-column img {
+  width: 300px;
+  height: auto;
+}
+
+.room-description {
+  background: var(--logo-color);
+  display: flex;
+  color: white;
+  border-radius: 5px;
+}
 
 /* Footer */
 .footer {

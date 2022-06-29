@@ -36,7 +36,6 @@ h1,
 h2 {
   font-weight: 300;
   line-height: 1.2;
-  padding: 15px;
 }
 
 p {
@@ -65,13 +64,15 @@ pre {
   color: #fff;
   height: 70px;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.navbar ul {
+/* .navbar ul {
   display: flex;
-}
+} */
 
-.navbar a {
+/* .navbar a {
   color: #fff;
   padding: 10px;
   margin: 0 5px;
@@ -79,16 +80,17 @@ pre {
 
 .navbar ul a:hover {
   border-bottom: 2px #fff solid;
-}
+} */
 
 .navbar .flex {
   justify-content: space-between;
 }
 
 .logo {
-  display: flex;
+  /* display: flex; */
   cursor: pointer;
   margin-top: 10px;
+  position: absolute;
 }
 
 /* Banner */
@@ -448,117 +450,113 @@ pre {
   }
 }
 
-
 /* payment portal */
-div.paymentBox{
-    position: relative;
-    top: 50px;
-    height: 400px;
-    width: 650px;
-    padding: 30px 30px 30px 30px;
-    border-radius: 6px;
-    background-color: #e9ecf2;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-
-
+.paymentBox {
+  position: relative;
+  top: 50px;
+  height: auto;
+  width: auto;
+  padding: 30px;
+  border-radius: 6px;
+  background-color: #e9ecf2;
+  margin-left: 200px;
+  margin-right: 200px;
+  justify-content: center;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
 }
 
 .enterCreditCardName input {
-    height: 45px;
-    width: 100%;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    padding: 0 60px 0 20px;
-    font-size: 18px;
-    border-width: 1px;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); 
-    margin-right:20px;
-    margin-left: 20px;
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  border-width: 1px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  margin-left: 20px;
 }
-
 
 .enterCreditCardNo input {
-    height: 45px;
-    width: 100%;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    padding: 0 60px 0 20px;
-    font-size: 18px;
-    border-width: 1px;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
-    margin-left: 20px; 
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  border-width: 1px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
-
-.enterCCV input{
-    height: 45px;
-    width: 150px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    padding: 0 60px 0 20px;
-    font-size: 18px;
-    border-width: 1px;
-    margin-right:20px;
-    margin-left: 20px;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); 
+.enterCCV input {
+  height: 45px;
+  width: 150px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  border-width: 1px;
+  margin-right: 20px;
+  margin-left: 20px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.paymentParent{
-    display: flex;
-    height: 45px;
-    width: auto;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    padding: 20px 20px 20px 20px;
-    margin: 20px 20px 20px 20px;
-    font-size: 16px;
-    border-width: 1px;
+.paymentParent {
+  display: flex;
+  height: 45px;
+  width: auto;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
+  font-size: 16px;
+  border-width: 1px;
 }
 
-.enterExpiryDateMonth input{
-    flex: 1;
-    height: 45px;
-    width: 100px;
-    outline: none;
-    border: none;
-    margin-right:20px;
-    margin-left: 20px;
-    border-radius: 5px;
-    padding: 20px 20px 20px 20px;
-    font-size: 18px;
-    border-width: 1px;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+.enterExpiryDateMonth input {
+  flex: 1;
+  height: 45px;
+  width: 100px;
+  outline: none;
+  border: none;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  padding: 20px 20px 20px 20px;
+  font-size: 18px;
+  border-width: 1px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.enterExpiryDateYear input{
-    flex:1;
-    height: 45px;
-    width: 100px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    padding: 0 20px 0 20px;
-    font-size: 18px;
-    border-width: 1px;
-    margin-left: 20px;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+.enterExpiryDateYear input {
+  flex: 1;
+  height: 45px;
+  width: 100px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 20px 0 20px;
+  font-size: 18px;
+  border-width: 1px;
+  margin-left: 20px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .submitCard {
-    background-color: var(--orange);
-    height: 45px;
-    width: 100px;
-    float: right;
-    padding: 5px 5px;
-    /*border-radius: 10px;*/
-    font-weight: 600;
-    /*box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);*/
-  }
+  background-color: var(--orange);
+  height: 45px;
+  width: 100px;
+  float: right;
+  padding: 5px 5px;
+  /*border-radius: 10px;*/
+  font-weight: 600;
+  /*box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);*/
+}
