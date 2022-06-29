@@ -44,8 +44,11 @@ function showSuggestions(list) {
   suggBox.innerHTML = listData;
 }
 
+// Calendar Input
+// document.getElementsByClassName(".startDate").placeholder = new (Date())();
+
 // Room Detail Dropdown
-const dropdowns = document.querySelectorAll(".room-detail");
+const dropdowns = document.querySelectorAll(".room-col");
 dropdowns.forEach((dropdown) => {
   const select = dropdown.querySelector(".room-select");
   const caret = dropdown.querySelector(".caret");
@@ -72,3 +75,7 @@ dropdowns.forEach((dropdown) => {
     });
   });
 });
+
+// $(document).ready(function () {
+//   $('input[name="datetime-local"]').attr("placeholder", "Full name");
+// });
