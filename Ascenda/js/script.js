@@ -45,10 +45,10 @@ function showSuggestions(list) {
 }
 
 // Calendar Input
-document.getElementsByClassName(".startDate").placeholder = new (Date())();
+// document.getElementsByClassName(".startDate").placeholder = new (Date())();
 
 // Room Detail Dropdown
-const dropdowns = document.querySelectorAll(".room-detail");
+const dropdowns = document.querySelectorAll(".room-col");
 dropdowns.forEach((dropdown) => {
   const select = dropdown.querySelector(".room-select");
   const caret = dropdown.querySelector(".caret");
